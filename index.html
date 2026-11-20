@@ -1425,6 +1425,85 @@
       }
     }
 
+    /* DESKTOP & TABLET HERO ALIGNMENT (>= 768px) — Exact 2-line headline, centered toggle, zero overlap */
+    @media screen and (min-width: 768px) {
+      .sec.hero {
+        justify-content: center !important;
+        align-items: center !important;
+        gap: clamp(0.85rem, 2.2vh, 1.75rem) !important;
+        padding: clamp(5rem, 10.5vh, 6.5rem) clamp(1.25rem, 3vw, 2.5rem) clamp(1.75rem, 4.5vh, 3rem) !important;
+      }
+
+      .sec.hero .comp:has(.hero-text) {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+      }
+
+      .sec.hero .font-c.hero-text,
+      .sec.hero .hero-text {
+        font-size: clamp(2.8rem, min(8.2vw, 13vh), 7.6rem) !important;
+        line-height: 0.96 !important;
+        letter-spacing: -0.01em !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .sec.hero .main-he-span {
+        display: block !important;
+        white-space: nowrap !important;
+        overflow: clip !important;
+        padding-bottom: 0.04em !important;
+      }
+
+      .sec.hero .comp.toggle-w {
+        top: 0 !important;
+        width: 16rem !important;
+        height: 8.85rem !important;
+        margin: clamp(0.2rem, 1.2vh, 0.85rem) auto !important;
+      }
+
+      .sec.hero label.toggle-w {
+        top: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+      }
+
+      .sec.hero .toggle-slider {
+        border-width: 0.45rem !important;
+        padding: 0.4rem !important;
+        align-items: center !important;
+      }
+
+      .sec.hero .toggle-ball {
+        height: 100% !important;
+        width: auto !important;
+        aspect-ratio: 1 / 1 !important;
+      }
+
+      .sec.hero .par-base,
+      .sec.hero .par-base._w-ch {
+        max-width: min(46ch, 88vw) !important;
+        margin-top: 0 !important;
+        text-align: center !important;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .sec.hero .comp.toggle-w {
+        width: 11.5rem !important;
+        height: 6.4rem !important;
+      }
+
+      .sec.hero .toggle-slider {
+        border-width: 0.3rem !important;
+        padding: 0.35rem !important;
+      }
+    }
+
     /* MOBILE PHONES ONLY (<= 767px) */
     @media screen and (max-width: 767px) {
       /* Journey Roadmap -> Animated Vertical Sky Roadmap on Phones (Zero Overlap / Zero Cutoff!) */
